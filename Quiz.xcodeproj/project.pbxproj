@@ -53,6 +53,7 @@
 		36C4FD19295E529A005C6408 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				36C4FD2B295E56F8005C6408 /* Views */,
 				36C4FD28295E5569005C6408 /* Components */,
 				36C4FD1A295E529A005C6408 /* QuizApp.swift */,
 				36C4FD1C295E529A005C6408 /* ContentView.swift */,
@@ -76,6 +77,13 @@
 				36C4FD29295E5588005C6408 /* PrimaryButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		36C4FD2B295E56F8005C6408 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
