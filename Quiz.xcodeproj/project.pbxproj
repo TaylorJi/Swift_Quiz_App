@@ -12,6 +12,7 @@
 		36C4FD1F295E529B005C6408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FD1E295E529B005C6408 /* Assets.xcassets */; };
 		36C4FD22295E529B005C6408 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36C4FD21295E529B005C6408 /* Preview Assets.xcassets */; };
 		36C4FD2A295E5588005C6408 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD29295E5588005C6408 /* PrimaryButton.swift */; };
+		36C4FD2D295E59F1005C6408 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD2C295E59F1005C6408 /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		36C4FD1E295E529B005C6408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36C4FD21295E529B005C6408 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36C4FD29295E5588005C6408 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		36C4FD2C295E59F1005C6408 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,9 @@
 				36C4FD2B295E56F8005C6408 /* Views */,
 				36C4FD28295E5569005C6408 /* Components */,
 				36C4FD1A295E529A005C6408 /* QuizApp.swift */,
-				36C4FD1C295E529A005C6408 /* ContentView.swift */,
 				36C4FD1E295E529B005C6408 /* Assets.xcassets */,
 				36C4FD20295E529B005C6408 /* Preview Content */,
+				36C4FD2C295E59F1005C6408 /* Extentions.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -82,6 +84,7 @@
 		36C4FD2B295E56F8005C6408 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36C4FD1C295E529A005C6408 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36C4FD2D295E59F1005C6408 /* Extentions.swift in Sources */,
 				36C4FD2A295E5588005C6408 /* PrimaryButton.swift in Sources */,
 				36C4FD1D295E529A005C6408 /* ContentView.swift in Sources */,
 				36C4FD1B295E529A005C6408 /* QuizApp.swift in Sources */,
