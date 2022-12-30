@@ -21,11 +21,18 @@ struct QuestionView: View {
             }
             ProgressBar(progress: 40) // from Components 
             VStack(alignment: .leading, spacing: 20) {
-                Text("To the nearest whole number, how many radians are in a whole circle?")
+                Text("The Python programming language gets its name from the British comedy group &quot;Monty Python.&quot")
                     .font(.system(size:20))
                     .bold()
                     .foregroundColor(.gray)
+                AnswerRow(answer: Answer(text: "True", isCorrect: true))
+                AnswerRow(answer: Answer(text: "False", isCorrect: false))
+                
             }
+            PrimaryButton(text: "Next")
+            
+            Spacer()
+
             
         }
         .padding()

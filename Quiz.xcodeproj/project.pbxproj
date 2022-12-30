@@ -16,6 +16,7 @@
 		36C4FD2F295E6815005C6408 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD2E295E6815005C6408 /* QuestionView.swift */; };
 		36C4FD31295E68C4005C6408 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD30295E68C4005C6408 /* ProgressBar.swift */; };
 		36C4FD34295E6C0E005C6408 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD33295E6C0E005C6408 /* Answer.swift */; };
+		36C4FD36295E6D3E005C6408 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD35295E6D3E005C6408 /* AnswerRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		36C4FD2E295E6815005C6408 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		36C4FD30295E68C4005C6408 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		36C4FD33295E6C0E005C6408 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		36C4FD35295E6D3E005C6408 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				36C4FD29295E5588005C6408 /* PrimaryButton.swift */,
 				36C4FD30295E68C4005C6408 /* ProgressBar.swift */,
+				36C4FD35295E6D3E005C6408 /* AnswerRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				36C4FD2F295E6815005C6408 /* QuestionView.swift in Sources */,
 				36C4FD2D295E59F1005C6408 /* Extentions.swift in Sources */,
+				36C4FD36295E6D3E005C6408 /* AnswerRow.swift in Sources */,
 				36C4FD2A295E5588005C6408 /* PrimaryButton.swift in Sources */,
 				36C4FD34295E6C0E005C6408 /* Answer.swift in Sources */,
 				36C4FD1D295E529A005C6408 /* ContentView.swift in Sources */,
