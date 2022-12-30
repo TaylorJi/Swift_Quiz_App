@@ -8,28 +8,40 @@
 import SwiftUI
 
 struct QuestionView: View {
+    @EnvironmentObject var triviaManager: TriviaManger
+    
     var body: some View {
         VStack(spacing: 40) {
             HStack {
                 Text("Trivia Game")
                     .lilacTitle()
                 Spacer()
-                Text("1 out of 10")
+                Text("\(triviaManager.index + 1) out of \(triviaManager.length)")
                     .foregroundColor(Color("AccentColor"))
                     .fontWeight(.heavy)
                 
             }
-            ProgressBar(progress: 40) // from Components 
+            ProgressBar(progress: triviaManager.progress) // from Components
             VStack(alignment: .leading, spacing: 20) {
-                Text("The Python programming language gets its name from the British comedy group &quot;Monty Python.&quot")
+                Text(triviaManager.question)
                     .font(.system(size:20))
                     .bold()
                     .foregroundColor(.gray)
-                AnswerRow(answer: Answer(text: "True", isCorrect: true))
-                AnswerRow(answer: Answer(text: "False", isCorrect: false))
+                
+                ForEach(triviaManager.answerChoices, id: \.id) {
+                    answer in AnswerRow(answer: answer)
+                        .environmentObject(triviaManager)
+                }
+                
                 
             }
-            PrimaryButton(text: "Next")
+            Button {
+                triviaManager.goToNextQuestion()
+            } label: {
+                PrimaryButton(text: "Next", background: triviaManager.answerSelected ? Color("AccentColor") : Color(red: 0.984313725490196, green: 0.9294117647058824, blue: 0.8470588235294118))
+            }
+            .disabled(!triviaManager.answerSelected)
+          
             
             Spacer()
 
@@ -45,5 +57,6 @@ struct QuestionView: View {
 struct QuestionView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionView()
+            .environmentObject(TriviaManger())
     }
 }

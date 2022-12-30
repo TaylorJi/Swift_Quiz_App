@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var triviaManager = TriviaManger()
     var body: some View {
+        
         // change to NavigationView that links different views
         NavigationView {
             VStack (spacing: 40){
@@ -22,6 +24,7 @@ struct ContentView: View {
                 
                 NavigationLink {
                     TrivialView() // destination
+                        .environmentObject(triviaManager)
                 } label: {
                     PrimaryButton(text: "Let's Go!") // from Components, trigger
                 }

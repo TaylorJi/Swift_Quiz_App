@@ -19,6 +19,7 @@
 		36C4FD36295E6D3E005C6408 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD35295E6D3E005C6408 /* AnswerRow.swift */; };
 		36C4FD38295E72DA005C6408 /* TrivialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD37295E72DA005C6408 /* TrivialView.swift */; };
 		36C4FD3A295EB445005C6408 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD39295EB445005C6408 /* Trivia.swift */; };
+		36C4FD3C295EB961005C6408 /* TriviaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C4FD3B295EB961005C6408 /* TriviaManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		36C4FD35295E6D3E005C6408 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		36C4FD37295E72DA005C6408 /* TrivialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrivialView.swift; sourceTree = "<group>"; };
 		36C4FD39295EB445005C6408 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
+		36C4FD3B295EB961005C6408 /* TriviaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				36C4FD1E295E529B005C6408 /* Assets.xcassets */,
 				36C4FD20295E529B005C6408 /* Preview Content */,
 				36C4FD2C295E59F1005C6408 /* Extentions.swift */,
+				36C4FD3B295EB961005C6408 /* TriviaManager.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				36C4FD3A295EB445005C6408 /* Trivia.swift in Sources */,
 				36C4FD2F295E6815005C6408 /* QuestionView.swift in Sources */,
 				36C4FD2D295E59F1005C6408 /* Extentions.swift in Sources */,
+				36C4FD3C295EB961005C6408 /* TriviaManager.swift in Sources */,
 				36C4FD36295E6D3E005C6408 /* AnswerRow.swift in Sources */,
 				36C4FD2A295E5588005C6408 /* PrimaryButton.swift in Sources */,
 				36C4FD34295E6C0E005C6408 /* Answer.swift in Sources */,
