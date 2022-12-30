@@ -1,0 +1,51 @@
+//
+//  Trivial.swift
+//  Quiz
+//
+//  Created by Taylor Ji on 2022-12-29.
+//
+
+import Foundation
+
+struct Trivia: Decodable {
+    var results: [Result]
+    
+    struct Result: Decodable, Identifiable {
+        //id is unique key
+        var id: UUID {
+            UUID()
+        }
+        //following the json
+        var category: String
+        var type: String
+        var difficulty: String
+        var question: String
+        var correctAnswer: String
+        var incorrectAnswers: [String]
+        
+        var formattedQuestion: AttributedString {
+            // similar to Java's try catch
+            do {
+                return try AttributedString(markdown: question)
+            } catch {
+                print("Error setting formattedQuestion: \(error)")
+                return ""
+            }
+            
+            var answers: [Answer] {
+                do {
+                    let correct = [Answer(text: try AttributedString(markdown: correctAnswer), isCorrect: true)]
+                    let inccorect = try incorrectAnswers.map {
+                        answer in Answer(text: try AttributedString(markdown: answer), isCorrect: false)
+                    }
+                    let allAnswers = correct + inccorect
+                    return allAnswers.shuffled()
+                    
+                } catch {
+                    print("Error setting answers: \(error)")
+                    return []
+                }
+            }
+        }
+    }
+}
